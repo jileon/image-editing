@@ -1,7 +1,7 @@
 :root{
-  --base:#ffc600;
+  --base:#00aeff;
   --spacing:15px;
-  --blur: 10px;
+  --blur: 0px;
 }
 
 img{
@@ -13,23 +13,39 @@ img{
 .hl{
   color:var(--base);
 }
-    /*
-      misc styles, nothing to do with CSS variables
-    */
+
 
     body {
       text-align: center;
-      background: #193549;
+      background: #202529;
       color: white;
       font-family: 'helvetica neue', sans-serif;
       font-weight: 100;
       font-size: 50px;
+      box-sizing: border-box;
+    }
+    main{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
     }
 
     .controls {
-      margin-bottom: 50px;
+      flex:1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+     
     }
 
-    input {
-      width: 100px;
+    input{
+      margin:1rem;
+    }
+
+  
+
+    img{
+
+      flex:2;
     }
